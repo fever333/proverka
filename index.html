@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <form id="form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" />
+      <small class="error-text">input incorect</small>
+
+      <!-- <label for="name">Age</label>
+      <input type="text" name="name" /> -->
+
+      <label for="G">Man</label>
+      <input type="radio" value="Man" name="gender" checked />
+
+      <label for="G">Wooman</label>
+      <input type="radio" value="Wooman" name="gender" />
+
+      <br />
+      <br />
+      <br />
+
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+
+    <div class="modal">
+      <div class="modal__wrapper">
+        <button id="closeBtn">X</button>
+
+        <div class="modal__content"></div>
+      </div>
+    </div>
+
+    <!-- <form>
+      <input
+        type="text"
+        value=""
+        class="inputName"
+        placeholder="Name,Surname,Lastname?"
+      />
+
+      <input type="text" class="age" placeholder="Age?" />
+      <input type="date" class="dateInput" />Еducation
+      <select name="selectEducation" id="selectEducation">
+        <option value="High">High</option>
+        <option value="Middle">Middle</option>
+        <option value="No">No</option>
+      </select>
+
+      <input class="gender" type="radio" name="gender" value="Man" />Man
+
+      <input class="gender" type="radio" name="gender" value="Wooman" />Wooman
+    </form>
+    <div class="container">
+      <div style="text-align: center">
+        <button><a href="#openModal">Submit</a></button>
+      </div>
+      <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content"></div>
+        </div>
+      </div>
+    </div> -->
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
