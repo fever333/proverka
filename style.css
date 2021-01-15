@@ -1,0 +1,35 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(11, 236, 236, 0.5);
+  display: none;
+}
+
+.modal__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  margin-right: -50%;
+  padding: 1rem;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+#closeBtn {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+#closeBtn:hover {
+  background-color: rgba(11, 236, 236, 0.5);
+}
+
+.error-text {
+  display: none;
+  color: red;
+  font-weight: bold;
+}
